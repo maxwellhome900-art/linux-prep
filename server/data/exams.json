@@ -1,0 +1,1212 @@
+{
+    "exams":  [
+                  {
+                      "id":  "linux-plus-exam",
+                      "title":  "Linux+ Practice Exam",
+                      "description":  "",
+                      "timeMinutes":  150,
+                      "questions":  [
+                                        {
+                                            "id":  "e1-q1",
+                                            "question":  "Natalie, a software developer at Dion Training, wants to configure a microservice-based web application that can automatically deploy additional containers as demand increases. Which of the following should be configured to enable the automation of multiple related tasks to deploy, manage, scale, and configure the containers that support this microservice?",
+                                            "options":  [
+                                                            "Looping",
+                                                            "Compilation",
+                                                            "Logging",
+                                                            "Orchestration"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "Orchestration enables the automation of multiple related tasks or even an entire workflow. Orchestration can be used to automate the deployment, management, scaling, and networking of containers to support increased demand for a service. Orchestration is an essential part of creating a microservice-based application that can respond automatically to changes in demand. A loop is any control statement that executes code repeatedly based on a certain condition. A loop is usually used as part of a script or program, but it alone would not enable the automation of multiple related tasks for a given microservice. Logging is the process of tracking and recording important events in a Linux system. Logs can contain messages about the Linux server, including the kernel, services, and applications running on it. Compilation is the process of converting high-level programming language to machine-readable code that the computer can understand and execute."
+                                        },
+                                        {
+                                            "id":  "e1-q2",
+                                            "question":  "Jane, a system administrator at Dion Training, is reviewing the /etc/rsyslog.conf file and notices that the configuration file is missing the default port number used by the rsyslog service. Which of the following default ports and protocols should be used by rsyslog on a Linux system?",
+                                            "options":  [
+                                                            "80/TCP",
+                                                            "22/TCP",
+                                                            "514/UDP",
+                                                            "443/TCP"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The rsyslog and syslog both use port 514 with UDP by default. The Hypertext Transmission Protocol (HTTP) uses port 80 with TCP by default. The Hypertext Transmission Protocol Secure (HTTPS) uses port 443 with TCP by default. The Secure Shell (SSH) uses port 22 with TCP by default."
+                                        },
+                                        {
+                                            "id":  "e1-q3",
+                                            "question":  "Allen, a software developer at Dion Training, needs to upload a new container image to the company\u0027s Docker repository. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "docker port",
+                                                            "docker push",
+                                                            "docker inspect",
+                                                            "docker rmi"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The docker push command is used to upload a container image to a registry. The docker port command is used to list the port mappings for the specified container. The docker rmi command is used to remove images from the docker repository. The docker inspect command is used to display detailed information about a container."
+                                        },
+                                        {
+                                            "id":  "e1-q4",
+                                            "question":  "Which of the following types of firewalls checks the source, destination, and protocol used, but is not concerned with the state of the connection?",
+                                            "options":  [
+                                                            "stateless",
+                                                            "services",
+                                                            "zone",
+                                                            "stateful"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "Stateless firewalls are simple and check things such as address information, such as source, destination, and protocol against configured firewall rules. Stateful firewalls inspect the packet contents and identify the behavior of the connection and how the data changes throughout the network communication process. These firewalls are significantly more robust than stateless firewalls. A firewall zone defines a set of rules for each connection."
+                                        },
+                                        {
+                                            "id":  "e1-q5",
+                                            "question":  "Rosemary, a system administrator at Dion Training, wants to execute the ps command and have its results displayed to the standard output, as well as to a text file called processes.txt. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "sed",
+                                                            "grep",
+                                                            "xargs",
+                                                            "tee"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The tee command reads the standard input, sends the output to the command line interface, as well as copying the output to each specified file. The grep command is used to perform pattern matching to display a specified string or search term in its output. The xargs command reads from standard input and executes a command for each argument provided to the command. When using the xargs command, each argument must be separated by spaces. The sed (stream editor) command can be used to modify text files or for global search and replace actions."
+                                        },
+                                        {
+                                            "id":  "e1-q6",
+                                            "question":  "Jemma, a cybersecurity analyst at Dion Training, wants to be able to uniquely identify files on a Linux server by creating a digital fingerprint for each file to ensure the integrity of the files remains intact at all times. Which of the following should be used to accomplish this?",
+                                            "options":  [
+                                                            "PKI",
+                                                            "Symmetric encryption",
+                                                            "Hashing",
+                                                            "Asymmetric encryption"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "Hashing is a one-way cryptographic function that takes a variable length input and produces a hash digest value of a fixed length as its output. For example, an SHA-256 hashing function will always produce a 256-bit hash digest, regardless of the length of the input the function receives. This hash value acts as a digital fingerprint to uniquely identify a file and ensure its integrity remains intact. Symmetric encryption is a type of encryption where a secret key is used to both encrypt and decrypt data. The output of a symmetric encryption function has a variable length output based on the length of the input received by the function. Asymmetric encryption is a type of encryption where a key pair, containing both a public and private key, is used to encrypt and decrypt data. The output of an asymmetric encryption function has a variable length output based on the length of the input received by the function. Public key infrastructure (PKI) is a system of processes, technologies, and policies used to encrypt and digitally sign data using asymmetric encryption functions."
+                                        },
+                                        {
+                                            "id":  "e1-q7",
+                                            "question":  "Which of the following type of RAIDs uses parity to provide fault tolerance?",
+                                            "options":  [
+                                                            "RAID 1",
+                                                            "RAID 5",
+                                                            "RAID 10",
+                                                            "RAID 0"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "A RAID 5 provides fault tolerance by using disk striping with parity. A RAID 5 writes the data and parity information to each disk in the array. This parity information is used to recreate the missing data from a failed storage drive. Disk cloning is the process of creating a bit-by-bit copy of a storage device to another device. Disk cloning is not a feature used by RAIDs. A RAID 0 provides disk striping across at least two storage disks. The disk partitions are divided into sections called stripes and data is written sequentially across the different stripes. A RAID 1 provides disk mirroring by duplicating the data on two different storage disks to provide complete redundancy. Disk mirroring is considered an inefficient use of storage capacity, though, since two full copies are made of each piece of data."
+                                        },
+                                        {
+                                            "id":  "e1-q8",
+                                            "question":  "What task does the following command perform?",
+                                            "options":  [
+                                                            "It creates a new user account with a home directory",
+                                                            "It modifies an existing user’s password",
+                                                            "It removes a user group from the system",
+                                                            "It deletes an existing user from the system"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "OBJ 2.2 - The useradd -m analyst command creates a new user called analyst and ensures a home directory is created for that user. It doesn’t delete a user, change a password, or remove a group. This is part of adding user accounts on a Linux system."
+                                        },
+                                        {
+                                            "id":  "e1-q9",
+                                            "question":  "Nicole, a cybersecurity analyst at Dion Training, wants to conduct packet analysis using a command-line utility in Linux. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "traceroute",
+                                                            "iostat",
+                                                            "iperf",
+                                                            "tshark"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The tshark command is a network protocol analyzer that can be used to capture packet data from a live network, read packets from a previously saved capture file, or write packets to a file. The iperf command is used to test the maximum throughput an interface will support. The iostat command is used to generate a report on CPU and device utilization. The traceroute command is used to display the network path between a client and a server, including any routers or firewalls used between the two systems."
+                                        },
+                                        {
+                                            "id":  "e1-q10",
+                                            "question":  "A security audit shows that a server is running outdated software packages with known exploits. What is the most effective action to resolve this issue?",
+                                            "options":  [
+                                                            "Increase the file permissions on the affected software’s binary files",
+                                                            "Change the server’s hostname to prevent it from being found in scans",
+                                                            "Apply available security patches to update the vulnerable packages",
+                                                            "Add more disk space to the server’s storage volume to improve performance"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "OBJ 5.4 - Applying security patches removes known vulnerabilities and protects the system. Increasing file permissions would weaken security. Adding disk space helps storage, not security. Changing the hostname does not address the root cause of the vulnerability."
+                                        },
+                                        {
+                                            "id":  "e1-q11",
+                                            "question":  "Cynthia, a system administrator at Dion Training, wants to download a container image from Dion Training\u0027s repository. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "docker push",
+                                                            "docker pull",
+                                                            "docker info",
+                                                            "docker ps"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The docker command is used as the primary command to interact with docker containers on a Linux system. The docker pull command is used to pull a container image from a registry. The docker push command is used to upload a container image to a registry. The docker ps command is used to list the containers on a system, as well as information like their creation date, uptime, and the ports in use by those containers. The docker info is used to display system-wide information, including the number of running, paused, and stopped containers."
+                                        },
+                                        {
+                                            "id":  "e1-q12",
+                                            "question":  "Rodney, a system administrator at Dion Training, is having issues installing yum on a Linux server. Which of the following package managers could he use instead if he needs to install and upgrade.rpm packages on the server?",
+                                            "options":  [
+                                                            "rpm",
+                                                            "dpkg",
+                                                            "apt",
+                                                            "zypp"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The.rpm file type is used primarily to install or update applications on the system using the yum or rpm commands. The.deb file type is used primarily to install or update applications on the system using the dpkg or apt commands. The SUSE ZYpp Package Manager (zypper) is a software package manager used in the SUSE Linux operating system and uses the.zypp file format."
+                                        },
+                                        {
+                                            "id":  "e1-q13",
+                                            "question":  "Hector, a new system administrator at Dion Training, just entered the \"yum update\" command with no options at the command line of a Linux server. Which of the following should he expect to happen?",
+                                            "options":  [
+                                                            "Yum would display an error since no package was specified",
+                                                            "Yum would remove the last package installed on the system",
+                                                            "Yum would reinstall the last package installed on the system",
+                                                            "Yum would update all of the packages installed on the system"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "OBJ 1.6 - If the yum update command is entered without any packages listed, it will update all of the installed packages on a given system. This can be time-consuming and is not recommended. The yum update {package name} command should be used instead to update a single package."
+                                        },
+                                        {
+                                            "id":  "e1-q14",
+                                            "question":  "Fiona, a system administrator at Dion Training, wants to transfer the public key for user \u0027jasondion\u0027 to DBserver02 so that it can be used with a remote SSH connection. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "ssh-copy-id DBserver02",
+                                                            "ssh-add jasondion@DBserver02",
+                                                            "ssh-copy-id jasondion@DBserver02",
+                                                            "ssh-keygen jasondion DBserver02"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The ssh-copy-id jasondion@DBserver02 command is the correct syntax needed to transfer a public key to a remote host. The ssh-copy-id command is used to transfer local keys to a remote system for authentication. Its purpose is to provide access without requiring a password for each login. This facilitates automated, passwordless logins and single sign-on using the SSH protocol."
+                                        },
+                                        {
+                                            "id":  "e1-q15",
+                                            "question":  "Paul, a cybersecurity analyst at Dion Training, wants to encrypt a message that he is sending to Kathryn. Paul wants to ensure that only Kathryn can read the contents of the encrypted message. Which of the following keys should he use to encrypt his message before transmission?",
+                                            "options":  [
+                                                            "Wildcard certificate",
+                                                            "Kathryn\u0027s public key",
+                                                            "Kathryn\u0027s private key",
+                                                            "Certificate authority"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The public key refers to one-half of a user\u0027s key pair in a Public Key Infrastructure (PKI) system. The public key is available to any user who wants to encrypt a message to a specific individual, but only the recipient\u0027s matching private key can be used to decrypt the message. A certificate authority (CA) is a server that issues digital certificates for entities and maintains the associated private/public key pair. Internal CAs issue self-signed certificates—certificates that are owned by the same entity that signs them. In other words, the certificate does not recognize any authority and is essentially certifying itself. Self-signed certificates require the client to trust the entity directly. Private keys are maintained securely by an individual or device and are used to decrypt messages that are encrypted with their public key. Private keys are also used to create digital signatures by encrypting a hash of the sent data. Wildcard certificates support multiple subdomains of a single parent domain, such as www.diontraining.com, mail.diontraining.com, and ftp.diontraining.com."
+                                        },
+                                        {
+                                            "id":  "e1-q16",
+                                            "question":  "Which of the following commands is used to securely transport files from a host to a server by tunneling the transfer through an SSH encrypted tunnel?",
+                                            "options":  [
+                                                            "sftp",
+                                                            "nc",
+                                                            "rsync",
+                                                            "mtr"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The SFTP (SSH File Transfer Protocol) command is used to access, manage, and transfer files over an encrypted SSH connection. The nc (netcat) command is used to test connectivity and send data across a network connection. The nc command is also used by penetration testers and system administrators to conduct a banner grab of the web server. The mtr command is a combination of the ping and traceroute tools that includes additional improvements to enable testing of the quality of a network connection. The rsync command is a data transfer tool that only transfers changed files and avoids copying duplicate information that already exists at the remote destination to drastically reduce network traffic."
+                                        },
+                                        {
+                                            "id":  "e1-q17",
+                                            "question":  "A monitoring system receives an SNMP trap reporting that a network interface is down. The monitoring tool displays the interface name and status using details from a structured source. What enabled the monitoring tool to interpret the trap data correctly?",
+                                            "options":  [
+                                                            "The SNMP agent sent the trap message to the monitoring server",
+                                                            "The monitoring server forwarded the trap alert to administrators",
+                                                            "The network device logged the event for later analysis",
+                                                            "The MIB described the object identifiers and data format for the trap message"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "OBJ 5.1 - The MIB defines the object identifiers (OIDs) and structure so the monitoring tool knows what the trap message refers to and how to display the information. The agent sends the trap, but the MIB enables correct interpretation. Forwarding the alert or logging the event are follow-up actions, not what defines or structures the data."
+                                        },
+                                        {
+                                            "id":  "e1-q18",
+                                            "question":  "Roland, a cybersecurity analyst at Dion Training, is conducting an audit of the company\u0027s service accounts on a Linux server. To increase the security of the server, Roland wants to block interactive logins from the service accounts and needs to prevent the service accounts from accessing the shell. Which of the following should be placed in the shell field of each service account listed in the /etc/passwd file to block their access to the shell?",
+                                            "options":  [
+                                                            "/etc/shadow",
+                                                            "/log/audit",
+                                                            "/sbin/nologin",
+                                                            "/sbin/noshell"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "Service accounts should be routinely audited to ensure the security of a Linux system. Service accounts should be blocked from accessing the shell and denied the ability to conduct an interactive login. To prevent this, the /sbin/nologin value should be entered in the shell field for the service account."
+                                        },
+                                        {
+                                            "id":  "e1-q19",
+                                            "question":  "Michael, a data analyst, wants to run a specialized script to gather information and create a weekly report. The task to create the report is already running, but he wants to increase its priority since the report is time sensitive. Which of the following commands should be utilized to reprioritize the currently running task?",
+                                            "options":  [
+                                                            "nice",
+                                                            "renice",
+                                                            "kill",
+                                                            "lsof"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The renice command is used to reprioritize running processes. The kill command is used to pass kill signals to processes. The nice command allows users to start new processes at a specified priority level. The lsof command displays a list of the open files and the processes that opened them."
+                                        },
+                                        {
+                                            "id":  "e1-q20",
+                                            "question":  "Chloe, a network administrator, is troubleshooting domain name resolution on a Linux server. Which of the following commands is used to quickly resolve IP addresses to domain names and domain names to IP addresses during troubleshooting?",
+                                            "options":  [
+                                                            "resolvectl",
+                                                            "hostnamectl",
+                                                            "ifcfg",
+                                                            "arp"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The resolvectl command allows an administrator to manually query the name resolution services to confirm that the names and IP addresses returned are accurate. The arp command is used to discover information about known MAC addresses and IP bindings. The ifcfg command is an alternative to ifconfig or the ip command for managing IP addressing. The hostnamectl command is used to view the system\u0027s hostname, to display the version of the Linux kernel being used, and display other information about the system\u0027s hardware. The systemd hostnamectl set-hostname command can be used to configure or change the hostname of the current Linux server."
+                                        },
+                                        {
+                                            "id":  "e1-q21",
+                                            "question":  "Jeffrey, a cybersecurity analyst at Dion Training, wants to remove or unload a module not currently being used by the Linux kernel to increase the security of a Linux server. Which of the following commands would you use to remove the kernel module?",
+                                            "options":  [
+                                                            "lsmod",
+                                                            "cryptsetup",
+                                                            "auditd",
+                                                            "modprobe"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The modprobe command is used to add or remove modules from a kernel. The modprobe command can load all the dependent modules before inserting the specified module and is preferred over using the insmod and rmmod commands. The lsmod command displays the currently loaded kernel modules, their sizes, usage details, and their dependent modules. The auditd (audit daemon) is used to ensure records are being properly written to the storage device. The cryptsetup command is used as a front-end tool to interact with the Linux Unified Key Setup (LUKS)."
+                                        },
+                                        {
+                                            "id":  "e1-q22",
+                                            "question":  "Gareth, a cybersecurity analyst at Dion Training, wants to enforce the SELinux security policies on a Linux server. Which of the following commands would he use to accomplish this?",
+                                            "options":  [
+                                                            "getenforce",
+                                                            "setenforce 0",
+                                                            "setenforce 1",
+                                                            "sudo nano /etc/setlinux/config then change SELINUX disabled"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The setenforce command temporarily changes SELinux modes, whereas a value of 0 is Permissive mode and a value of 1 is Enforcing mode. The getenforce command displays the current mode. The sudo nano /etc/setlinux/config command and setting the SELINUX variable to disabled are used to disable SELinux."
+                                        },
+                                        {
+                                            "id":  "e1-q23",
+                                            "question":  "Neil, a system administrator at Dion Training, wants to display the public keys for any users that are authorized to connect to a Linux server using the SSH protocol for remote access. Which of the following files should be reviewed to determine which users are authorized to connect to a given server?",
+                                            "options":  [
+                                                            "/etc/ssh/sshd_config",
+                                                            "~/.ssh/authorized_keys",
+                                                            "/etc/ssh/ssh_config",
+                                                            "~/.ssh/known_hosts"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The ~/.ssh/authorized_keys file stores the keys on the remote SSH servers that the client machine connects to and allows key-based authentication to occur. The /etc/ssh/sshd_config file must be edited to configure who is allowed to remotely connect to the server, what level of remote access they will have when connecting, and to present a warning or instructional message to the user when connecting. The ~/.ssh/known_hosts file stores the public keys of any remote systems that the client has connected to. The /etc/ssh/ssh_config file is used to define the SSH client settings and is not usually customized."
+                                        },
+                                        {
+                                            "id":  "e1-q24",
+                                            "question":  "Joe, a system administrator at Dion Training, wants to display the resources currently in use. The output of the command should be ordered based on the amount of memory consumed by each process. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "top with M option",
+                                                            "iostat",
+                                                            "sudo pkill -15 {PID}",
+                                                            "ps {PID} kill"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The top command with the M option is used to display memory consumption would display the resources being used and will display them in order of their memory consumption. The iostat command is used to generate a report on CPU and device utilization. The sudo pkill -15 {PID} command sends the SIGTERM signal to the application which results in a graceful shutdown of the process. The p- {PID} command displays processes associated with a given PID."
+                                        },
+                                        {
+                                            "id":  "e1-q25",
+                                            "question":  "Liam, a software developer at Dion Training, cannot locate a text file called AISourceCode.txt on the development team\u0027s Linux server. Which of the following commands should be used to locate the file?",
+                                            "options":  [
+                                                            "xargs",
+                                                            "which",
+                                                            "tee",
+                                                            "find"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The find command searches the filesystem for files that match given parameters, such as the file size, modification date, owner, or set permissions. The xargs command reads from standard input and executes a command for each argument provided to the command. When using the xargs command, each argument must be separated by spaces. The tee command reads the standard input, sends the output to the command line interface, as well as copying the output to each specified file. The which command displays where a command executable file is stored."
+                                        },
+                                        {
+                                            "id":  "e1-q26",
+                                            "question":  "Lilian, a software developer at Dion Training, needs to update the repository with the changes she made to the company\u0027s mobile application code. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "git push",
+                                                            "git pull",
+                                                            "git commit",
+                                                            "git add"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The git commit command is used to update the Git repository with any code changes and creates a new snapshot of that repository. The git pull command is used to download content from a remote repository that updates the local repository to mirror the contents locally. The git push command is used to upload local repository content to a remote central repository. The git add command is used to add changes to the working directory, but changes are not formally made until the commit command is run."
+                                        },
+                                        {
+                                            "id":  "e1-q27",
+                                            "question":  "Kayleigh, a cybersecurity analyst at Dion Training, needs root-level privileges on the /etc/passwd file. Since she is not a system administrator, she only requires root-level permissions on this file and not on any others. Which of the following special permission sets should be configured to accomplish this?",
+                                            "options":  [
+                                                            "SGID",
+                                                            "SUID",
+                                                            "ACL",
+                                                            "Sticky bit"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The SUID (setuid) permission allows a user to have similar permissions as the owner of the file. A sticky bit is a special permission bit that protects files in a directory. Sticky bits ensure that only the owner of a file or directory (or root) can delete the file or directory. The SGID (setgid) permission allows a user to have permissions that are similar to those of the file\u0027s group owner. An access control list (ACL) is a list of permissions attached to an object. ACLs can be used for situations where the traditional file permissions are not sufficient to configure the proper permissions for an object."
+                                        },
+                                        {
+                                            "id":  "e1-q28",
+                                            "question":  "Monica, a system administrator at Dion Training, wants to select an orchestration tool that is agentless and allows the company to define both cloud and on-premise resources using human-readable configuration files. Which of the following orchestration tools would meet these requirements?",
+                                            "options":  [
+                                                            "Terraform",
+                                                            "SaltStack",
+                                                            "Chef",
+                                                            "Ansible"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "Terraform is an orchestration tool that is agentless and uses the specialized Terraform configuration language. Terraform is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share. SaltStack is an orchestration tool that utilizes both agent and agentless options and supports the use of Python and YAML. Ansible is an orchestration tool that is commonly used for Red Hat Enterprise Linux deployments, is agentless, and relies on the Python programming language. Chef is an orchestration tool that utilizes agents and the Ruby programming language."
+                                        },
+                                        {
+                                            "id":  "e1-q29",
+                                            "question":  "Jonathan, a system administrator at Dion Training, needs to create a new group called Development on the company\u0027s Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "groupmod",
+                                                            "groupdel",
+                                                            "useradd",
+                                                            "groupadd"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The groupadd command is used to create a new group. The groupmod command is used to modify the group on a system. The groupdel command is used to delete or remove a group on a system. The useradd command is used to create user accounts and configure the default settings for a new user."
+                                        },
+                                        {
+                                            "id":  "e1-q30",
+                                            "question":  "Carol, a system administrator at Dion Training, is troubleshooting a Linux server that is having boot issues. Which of the following targets should be used to attempt to fix these boot issues?",
+                                            "options":  [
+                                                            "network-online.target",
+                                                            "graphical.target",
+                                                            "rescue.target",
+                                                            "multi-user.target"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The rescue.target unit file starts rescue mode used to troubleshoot the Linux system. The multi-user.target file creates a command line interface (CLI) environment which uses fewer resources than the traditional GUI environment. The graphical.target file creates a graphical user interface (GUI) environment. The network-online target is used to start the specified network services and delay the target until the network service is established."
+                                        },
+                                        {
+                                            "id":  "e1-q31",
+                                            "question":  "Which of the following commands displays bus information about devices attached to the Universal Serial Bus?",
+                                            "options":  [
+                                                            "dmidecode",
+                                                            "lsusb",
+                                                            "lspci",
+                                                            "make"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The lsusb command displays information about devices attached to the USB bus of the system. The lspci command displays information about devices attached to the Peripheral Component Interconnect (PCI) bus. The make command assists in maintaining a set of programs by building up-to-date versions of programs. The make command automatically looks for the makefile in the current directory. The dmidecode command displays system information for current devices. The dmidecode command can also indicate upgrade possibilities by showing maximum processor and memory upgrades."
+                                        },
+                                        {
+                                            "id":  "e1-q32",
+                                            "question":  "Desmond, a system administrator at Dion Training, is attempting to troubleshoot a DNS-related resolution issue. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "resolvectl",
+                                                            "iostat",
+                                                            "ping",
+                                                            "traceroute"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The resolvectl command allows an administrator to manually query the name resolution services to confirm that the names and IP addresses returned are accurate. The iostat command is used to generate a report on CPU and device utilization. The ping (Packet Internet Groper) command is used to check the network connectivity between a client and a server. The traceroute command is used to display the network path between a client and a server, including any routers or firewalls used between the two systems."
+                                        },
+                                        {
+                                            "id":  "e1-q33",
+                                            "question":  "Consider the permission string for file1 in the screenshot above. Which of the following is indicated by the output of the \"lsattr file1\" command?",
+                                            "options":  [
+                                                            "The contents of the file is blank",
+                                                            "Read/write permissions are assigned",
+                                                            "The file size is 0 KB",
+                                                            "The immutable attribute is set"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The \"i\" in the permissions string shown in the image indicates that the immutable attribute is set. The immutable attribute or flag prevents the deletion, renaming, or writing of the specified file."
+                                        },
+                                        {
+                                            "id":  "e1-q34",
+                                            "question":  "Lucas wants to view status information and messages about a RAID installed within a Linux server. Which of the commands should he execute to view the desired information about the RAID?",
+                                            "options":  [
+                                                            "cat /root",
+                                                            "cat /etc/secure",
+                                                            "cat /proc/mdstat",
+                                                            "cat /dev/sda"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The cat command displays the contents of a text file on the screen. The /proc/mdstat file contains status information related to RAID arrays. So, executing the command cat /proc/mdstat will display messages and status information about the RAID attached to a Linux server. The /root directory is the home directory of the root user. The /dev/sda file contains driver information for the sda hard drive. The /etc/secure is not a recognized default Linux file or directory."
+                                        },
+                                        {
+                                            "id":  "e1-q35",
+                                            "question":  "The path to a storage device dynamically changes when devices are added or removed from a Linux server, such as /dev/sda1 becoming /dev/sdb1. Which of the following commands is used to identify the UUID of a storage device instead of relying on the storage device\u0027s path?",
+                                            "options":  [
+                                                            "lsscsi",
+                                                            "blkid",
+                                                            "lspci",
+                                                            "fcstat"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The blkid command displays known information about the partitions on a specified device. The fcstat command displays information about existing Fibre Channel adapters. The lspci command is used to display information about hardware devices connected to the Peripheral Component Interconnect (PCI) bus. The lsscsi command displays information about hardware storage devices connected to the Small Computer System Interface (SCSI) bus."
+                                        },
+                                        {
+                                            "id":  "e1-q36",
+                                            "question":  "Which of the following is used to represent the greater than comparison operator in Bash?",
+                                            "options":  [
+                                                            "-gt",
+                                                            "!",
+                                                            "*",
+                                                            "-ge"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The (-gt) operator is the greater than comparison operator. The (*) is the multiplication arithmetic operator. The (-ge) is the greater than or equal to comparison operator. The (!) is the logical negation (not) operator."
+                                        },
+                                        {
+                                            "id":  "e1-q37",
+                                            "question":  "William wants to review the logical volume space allocations created by another system administrator on a Linux server. Which of the following commands can display key information about the logical volumes that were previously created on a Linux server?",
+                                            "options":  [
+                                                            "vgcreate",
+                                                            "pvcreate",
+                                                            "lvresize",
+                                                            "lvscan"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The lvscan command scans all physical devices for logical volumes on a Linux server. The lvresize command resizes logical volumes on a Linux server. The pvcreate command initializes a drive or partition to use as a physical volume on a Linux server. The vgcreate command creates volume groups on a Linux server."
+                                        },
+                                        {
+                                            "id":  "e1-q38",
+                                            "question":  "Antony, a system administrator at Dion Training, ran the top command and sees an abnormally high value for the %id metric. Which of the following BEST describes what this metric is used for?",
+                                            "options":  [
+                                                            "This metric represents the amount of time the CPU spent running user processes",
+                                                            "This metric represents the amount of time the CPU is waiting for I/O access",
+                                                            "This metric represents the amount of time the CPU is idle",
+                                                            "This metric represents the amount of time a virtual CPU is waiting for access to the physical CPU"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The top command dynamically displays the processes consuming the most system resources. The %id displays CPU idle time and if this is too high then this indicates that the CPU is working too hard. The %us displays CPU time spent running user processes. The %s metric displays the CPU time spent running the Linux kernel. The %wa metric displays the I/O wait time. If the %wa is high, this indicates that the run queue is too high. The %st displays steal which indicates how often a virtual CPU is waiting for access to the physical CPU."
+                                        },
+                                        {
+                                            "id":  "e1-q39",
+                                            "question":  "An administrator attempts to install a package using apt on a Debian-based system. The operation fails with this output: What is the most appropriate next step to resolve this issue?",
+                                            "options":  [
+                                                            "Edit /etc/fstab to point to the correct repository location",
+                                                            "Enable or add the repository that contains libxyz version 2.0 or higher",
+                                                            "Downgrade myapp to match the installed version of libxyz",
+                                                            "Rebuild the initramfs to include libxyz for installation"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "OBJ 5.2 - This message shows a missing dependency. The next step is to ensure the appropriate repository is enabled so the required version of libxyz is available. Downgrading myapp could work, but it is not the ideal first step. Rebuilding initramfs or editing fstab are unrelated to resolving package dependencies."
+                                        },
+                                        {
+                                            "id":  "e1-q40",
+                                            "question":  "Which of the following features is provided by a RAID 0?",
+                                            "options":  [
+                                                            "Striping",
+                                                            "Parity",
+                                                            "Cloning",
+                                                            "Mirroring"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "A RAID 0 provides disk striping across at least two storage disks. The disk partitions are divided into sections called stripes and data is written sequentially across the different stripes. A RAID 1 provides disk mirroring by duplicating the data on two different storage disks to provide complete redundancy. Disk mirroring is considered an inefficient use of storage capacity, though, since two full copies are made of each piece of data. A RAID 5 provides fault tolerance by using disk striping with parity. A RAID 5 writes the data and parity information to each disk in the array. This parity information is used to recreate the missing data from a failed storage drive. Disk cloning is the process of creating a bit-by-bit copy of a storage device to another device. Disk cloning is not a feature used by RAIDs."
+                                        },
+                                        {
+                                            "id":  "e1-q41",
+                                            "question":  "Derrick, a system administrator at Dion Training, wants to configure his Linux server\u0027s system time to synchronize with another server\u0027s time. Which of the following files does he need to configure to accomplish this?",
+                                            "options":  [
+                                                            "~/.ssh",
+                                                            "/etc/ntp.repo",
+                                                            "/etc/chrony.configuration",
+                                                            "/etc/ntp.conf"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The Network Time Protocol daemon (ntpd) synchronizes system time across one or more specified time servers using port 123. The time server to be used for the synchronization can be set by editing the /etc/ntp.conf file. The ~/.ssh store ssh configuration information. Both /etc/chrony.configuration and /etc/ntp.repo are not recognized default configuration files on a Linux system."
+                                        },
+                                        {
+                                            "id":  "e1-q42",
+                                            "question":  "Miriam, a system administrator at Dion Training, is troubleshooting a network connectivity issue on a Linux workstation. She ran the \u0027ip addr\u0027 command and determined that the workstation has an assigned IP address of 169.254.25.1. Which of the following is MOST likely causing the network connectivity issues on the system?",
+                                            "options":  [
+                                                            "A private IP address is assigned to the workstation and isn\u0027t routable on the internal network",
+                                                            "The workstation has not been assigned a valid Layer 2 address",
+                                                            "The client failed to obtain a valid lease from the DHCP server",
+                                                            "A public IP address is assigned to the workstation and isn\u0027t routable on the internal network"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "An IP address in the 169.254.x.x/16 range is called an APIPA. An Automatic Private IP Addressing (APIPA) is assigned to a device when the DHCP server is either permanently or temporarily unavailable. A workstation using an APIPA address is not able to communicate outside of its subnet or local area network."
+                                        },
+                                        {
+                                            "id":  "e1-q43",
+                                            "question":  "The network administrators at Dion Training are concerned that their network connection is being saturated due to a large number of files being backed up across the local area network. Olivia, a Linux administrator, has been asked to choose a command line utility to back up and copy the files from a Linux server to a backup server. Which of the following tools should Olivia choose so that only files containing changed data will be copied to the remote server?",
+                                            "options":  [
+                                                            "nc",
+                                                            "rsync",
+                                                            "xz",
+                                                            "scp"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The rsync command is a data transfer tool that only transfers changed files and avoids copying duplicate information that already exists at the remote destination to drastically reduce network traffic. The nc (netcat) command is used to test connectivity and send data across a network connection. The scp (secure copy) command is used to copy data to/from a remote host using SSH. The xz command is a data compression utility that reduces the size of selected files and manages files in the.xz file format."
+                                        },
+                                        {
+                                            "id":  "e1-q44",
+                                            "question":  "Why is CVSS important in audit and compliance processes?",
+                                            "options":  [
+                                                            "It standardizes the severity rating of vulnerabilities, helping organizations prioritize remediation efforts based on risk.",
+                                                            "It encrypts vulnerability logs and blocks external auditors from reviewing severity levels to maintain confidentiality.",
+                                                            "It restricts access to vulnerability data, ensuring only high-level administrators can analyze security threats.",
+                                                            "It eliminates the need for manual vulnerability assessments by automatically patching all identified weaknesses."
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "CVSS provides a standardized framework for rating the severity of security vulnerabilities, enabling organizations to prioritize which issues to address first based on the level of risk, thereby supporting effective compliance and audit decision-making. Encrypting logs to block auditors (A) would violate transparency requirements. Automatic patching of all vulnerabilities (C) ignores the need for risk-based prioritization and manual oversight. Restricting data access solely to administrators (D) limits audit visibility and violates principles of open security governance."
+                                        },
+                                        {
+                                            "id":  "e1-q45",
+                                            "question":  "Alison, a system administrator at Dion Training, is working on an openSUSE server. Which of the following tasks will be performed if the command \"zypper in\" is executed on this system?",
+                                            "options":  [
+                                                            "Removing a software package",
+                                                            "Upgrading the operating system",
+                                                            "Updating a software package",
+                                                            "Installing a software package"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The zypper in or install command is used to install a Zypper package. The zypper up or update command is used to update a Zypper package. The zypper rm or remove command is used to remove a Zypper package. Zypper is used to install, remove, or upgrade Zypper packages, not the entire openSUSE operating system."
+                                        },
+                                        {
+                                            "id":  "e1-q46",
+                                            "question":  "Mia has been tasked with designing a file server on a network that will contain a mixture of both Linux and Windows systems. Which network storage protocol should be selected to ensure compatibility with both operating systems found in this environment?",
+                                            "options":  [
+                                                            "NFS",
+                                                            "BIOS",
+                                                            "SMB",
+                                                            "LUKS"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The SMB (Server Message Block) protocol provides users with shared access to files and other resources across a local area network (LAN). Linux supports SMB through the use of SAMBA, whereas SMB is supported by default by the Windows operating system. If your network uses both Linux and Windows systems, then you should use SMB for file sharing over the network. The NFS (Network File System) protocol provides similar functionality to SMB but is only used in heterogenous Linux-based networks. Linux Unified Key Setup (LUKS) is a platform-independent full-drive encryption solution that is commonly used to encrypt storage devices in Linux environments. The Basic Input/Output System (BIOS) is a standard for firmware interfaces stored on a motherboard\u0027s ROM chip. The BIOS firmware is run when the computer powers on, enables it to test the various hardware components in the computer, and runs the boot loader to start up the operating system."
+                                        },
+                                        {
+                                            "id":  "e1-q47",
+                                            "question":  "Rachel, a system administrator at Dion Training, needs to present a report to her manager about a specific container running on the server. Which of the following commands should be used to determine which containers are currently running on the server?",
+                                            "options":  [
+                                                            "docker start",
+                                                            "docker ps",
+                                                            "docker ls",
+                                                            "docker logs"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "See course materials for details."
+                                        },
+                                        {
+                                            "id":  "e1-q48",
+                                            "question":  "Muriel, a system administrator at Dion Training, wants to set system-wide environmental variables and startup programs for new user shells on a Linux server. Which of the following files should be modified to accomplish this?",
+                                            "options":  [
+                                                            "/etc/profile",
+                                                            "/etc/group",
+                                                            "/etc/passwd",
+                                                            "/etc/shadow"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The /etc/profile to set system-wide environment variables and startup programs for new user shells. The /etc/passwd file stores the actual user account and maintains various settings related to accounts. The /etc/shadow file stores password information for the accounts. The /etc/group file contains a list of groups and group IDs."
+                                        },
+                                        {
+                                            "id":  "e1-q49",
+                                            "question":  "Which of the following is considered a static file with executable code that can be used to create a container on a server?",
+                                            "options":  [
+                                                            "Hypervisor",
+                                                            "Container engine",
+                                                            "Virtual machine",
+                                                            "Container image"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "A container image is a static file with executable code that can create a container on a computer system. Since a container image is a static file, it cannot be changed and is therefore able to be deployed consistently in any environment. A container is an operating system virtualization deployment that contains everything required to run a service, application, or microserver. A container engine is a piece of software that processes user requests and runs one or more containers on top of a single operating system. Virtual machines (VMs) allow for the virtualization of a physical computer so that each virtual machine can run its own copy of an operating system. Virtual machines rely on a specialized piece of software known as a hypervisor that controls and manages the allocation of the underlying physical hardware to the virtual machines and their individual operating systems."
+                                        },
+                                        {
+                                            "id":  "e1-q50",
+                                            "question":  "A Linux administrator is designing a monitoring solution for a fleet of servers and wants to avoid installing software agents on each system. The administrator also needs to receive real-time alerts about disk failures and interface errors. Which combination of data acquisition methods best supports this design?",
+                                            "options":  [
+                                                            "Webhooks and agent-based monitoring",
+                                                            "SNMP polling and agent-based monitoring",
+                                                            "SNMP traps and agentless monitoring",
+                                                            "Health checks and agentless monitoring"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "OBJ 5.1 - SNMP traps provide real-time, asynchronous alerts when specific conditions like disk failures occur, without requiring polling. Combined with agentless monitoring, this approach avoids installing local software and relies on external queries or native protocol support. Webhooks are common in API-driven environments but not typically used for system-level hardware events. SNMP polling and health checks involve repeated querying rather than immediate alerting."
+                                        },
+                                        {
+                                            "id":  "e1-q51",
+                                            "question":  "What does the following command accomplish?",
+                                            "options":  [
+                                                            "A virtual disk is extended using a networked storage pool",
+                                                            "A virtual network is started so VMs can connect to it",
+                                                            "A copy of an existing network is created for VM use",
+                                                            "A virtual machine is started using the bridged-net interface"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "OBJ 1.7 - The virsh net-start command starts a defined virtual network, making it available for virtual machines to use. In this example, bridged-net refers to a bridged network, which allows VMs to appear on the physical network like real devices. This command does not start a VM, modify virtual storage, or clone a network, those require different commands."
+                                        },
+                                        {
+                                            "id":  "e1-q52",
+                                            "question":  "Riley, a system administrator at Dion Training, needs to modify the global settings for the DNF application, including where to find the repository configuration files, log file locations, and cache information. Which of the following files/directories contain DNF\u0027s global settings?",
+                                            "options":  [
+                                                            "/etc/dnf/dnf.conf",
+                                                            "/etc/apt.conf",
+                                                            "/etc/yum.repo.d",
+                                                            "/etc/yum.conf"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The /etc/dnf/dnf.conf contains global settings for the DNF package manager. The /etc/yum.repos.d directory contains reference files for both the YUM and DNF package managers. The /etc/apt.conf configuration file is used for managing the configuration of the APT tool suite. The /etc/yum.conf file is used to manage global settings for the YUM package manager and contains items such as repository configuration files, log file locations, and cache information."
+                                        },
+                                        {
+                                            "id":  "e1-q53",
+                                            "question":  "Katie, a system administrator at Dion Training, wants to display information about a kernel module\u0027s version number or the name of the module\u0027s author. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "lsmod",
+                                                            "rmmod",
+                                                            "modprobe",
+                                                            "modinfo"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The modinfo command displays information about a particular kernel module, such as the file name of the module, license, description, author\u0027s name, module version number, dependent modules, and other parameters or attributes. The modprobe command is used to add or remove modules from a kernel. The modprobe command can load all the dependent modules before inserting the specified module and is preferred over using the insmod and rmmod commands. The lsmod command displays the currently loaded kernel modules, their sizes, usage details, and their dependent modules. The rmmod command removes a module from the currently running kernel."
+                                        },
+                                        {
+                                            "id":  "e1-q55",
+                                            "question":  "Heidi, a system administrator at Dion Training, wants to manage the system\u0027s mount points using systemd. Which of the following sections under the [Mount] section of the.mount file is used to identify any additional required options needed for the mount action to occur?",
+                                            "options":  [
+                                                            "Type",
+                                                            "Options",
+                                                            "What",
+                                                            "Where"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The.mount file is used to configure mount points on a file system for use with systemd. There are four options used in a.mount unit file: options, what, where, and type. The \u0027Options\u0027 option specifies any additional required options for the mount action. The \u0027What\u0027 option identifies the absolute path to the storage device that will be mounted. The \u0027Where\u0027 option identifies the absolute path to the mount point\u0027s directory. The \u0027Type\u0027 option defines the filesystem type (optional)."
+                                        },
+                                        {
+                                            "id":  "e1-q56",
+                                            "question":  "Lydia, a cybersecurity analyst at Dion Training, wants to be able to encrypt and decrypt data at rest using the same secret key. Which of the following should be used to accomplish this?",
+                                            "options":  [
+                                                            "Symmetric encryption",
+                                                            "Asymmetric encryption",
+                                                            "PKI",
+                                                            "Hashing"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "Symmetric encryption is a type of encryption where a secret key is used to both encrypt and decrypt data. The output of a symmetric encryption function has a variable length output based on the length of the input received by the function. Hashing is a one-way cryptographic function that takes a variable length input and produces a hash digest value of a fixed length as its output. For example, an SHA-256 hashing function will always produce a 256-bit hash digest, regardless of the length of the input the function receives. Asymmetric encryption is a type of encryption where a key pair, containing both a public and private key, is used to encrypt and decrypt data. The output of an asymmetric encryption function has a variable length output based on the length of the input received by the function. Public key infrastructure (PKI) is a system of processes, technologies, and policies used to encrypt and digitally sign data using asymmetric encryption functions."
+                                        },
+                                        {
+                                            "id":  "e1-q57",
+                                            "question":  "Douglas, a cybersecurity analyst at Dion Training, has identified some.pem files in a software developer\u0027s local code repository. These.pem files contain encryption keys and should not be committed to the remote Git repository. Which of the following files should be configured so that Git will ignore these.pem files during any future commit",
+                                            "options":  [
+                                                            ".gitworking",
+                                                            ".gitconfig",
+                                                            ".gittree",
+                                                            ".gitignore"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The purpose of the.gitignore file is to identify files that should be ignored during a commit action. The.gitconfig file is used to make configurations to the local git environment."
+                                        },
+                                        {
+                                            "id":  "e1-q58",
+                                            "question":  "Rose, a network administrator at Dion Training, wants to review all of the configuration settings for the DMZ of the firewall on a Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "firewall-cmd --get-zones",
+                                                            "firewall-cmd --zone=dmz --add-port=21/tcp",
+                                                            "firewall-cmd --zone=dmz --list-all",
+                                                            "firewall-cmd --zone=dmz --remove-port=21/tcp"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The firewall-cmd --zone=dmz --list-all would list all rules in the dmz zone. The firewall-cmd --get-zones is used to list all zones in the firewall. The firewall-cmd –--zone=dmz --remove-port=21/tcp is used to block FTP communications through the firewall. The firewall-cmd --zone=dmz --add-port=21/tcp would allow FTP communications to occur through the firewall using port 21."
+                                        },
+                                        {
+                                            "id":  "e1-q59",
+                                            "question":  "Abigail, a Linux user, is running a script that contains an echo statement and a looping function. Unfortunately, the script is filling the display with information from the echo command but it is not allowing her to enter any other commands into the terminal. Which of the following keystrokes could be used to pause the currently running script so that she can enter another command to the terminal?",
+                                            "options":  [
+                                                            "End Key",
+                                                            "CTRL + Z",
+                                                            "CTRL + C",
+                                                            "CTRL + D"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The CTRL + Z keystroke pauses a job temporarily so that it can be moved to the background. The CTRL + D keystroke exits the program and logs the user out of the current session. The CTRL + C keystroke stops a running process. Pressing the end key will not conduct any process actions in Linux."
+                                        },
+                                        {
+                                            "id":  "e1-q60",
+                                            "question":  "Which of the following is a YAML file usually used for?",
+                                            "options":  [
+                                                            "To create configuration files in Linux",
+                                                            "To configure the standard output in Linux",
+                                                            "To edit text files in Linux",
+                                                            "To create system source code in Linux"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "YAML (YAML Ain\u0027t Markup Language) is a data serialization language used to write configuration files. YAML is designed to be readable by humans and machines. YAML primary purpose and design is for configuration files, not for creating source code like other software languages. YAML is not used to set the standard output in Linux and it is not a text editor."
+                                        },
+                                        {
+                                            "id":  "e1-q61",
+                                            "question":  "Gwendoline, a cybersecurity analyst at Dion Training, is reviewing the permissions assigned to file on a Linux server. The file currently has a chmod value of 642 assigned. Which of the following permissions would the user have when accessing the file?",
+                                            "options":  [
+                                                            "read, write, and execute",
+                                                            "none",
+                                                            "read only",
+                                                            "read and write"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "A chmod value of 642 would indicate that the user was assigned a permission of 6. This indicates that the user permissions (6) will allow for read (4) and write (2), but not execute (1) permissions (4+2+0 =6). Linux uses permission strings to indicate the type of permissions a file or directory has. These permissions strings can be written as a series of nine letters (using R for read, W for write, and X for execute), or the permission string can be abbreviated using a three-digit number to represent the user, group, and other permission states. When using the abbreviated number format, each digit is calculated by adding the permission for the field together. Read permissions have a value of 4. Write permissions have a value of 2. Execute permissions have a value of 1."
+                                        },
+                                        {
+                                            "id":  "e1-q62",
+                                            "question":  "A server reports \"No space left on device\" errors even though df -h shows: The administrator runs df -i and sees: What is the most appropriate corrective action?",
+                                            "options":  [
+                                                            "Update the kernel to a newer version",
+                                                            "Extend the partition size using LVM",
+                                                            "Remove unnecessary small files to free up inodes",
+                                                            "Add a new entry to /etc/fstab for the root filesystem"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "OBJ 5.2 - The output shows inode exhaustion, meaning no new files can be created despite available space. The best solution is to clean up directories with excessive small files, freeing up inodes. Extending the partition does not increase inode count on existing filesystems. Adding fstab entries or updating the kernel does not address the root issue."
+                                        },
+                                        {
+                                            "id":  "e1-q63",
+                                            "question":  "Rita, a system administrator at Dion Training, received an error indicating that the filesystem size is 2 GB according to the superblock. When Rita checks the physical size of the device, she notices it is only 1 GB in size. Which of the following filesystem errors is occurring?",
+                                            "options":  [
+                                                            "Inode exhaustion",
+                                                            "Filesystem mismatch",
+                                                            "Low IOPS",
+                                                            "Filesystem corruption"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "Filesystem mismatch occurs when the physical size of the device does not equal the filesystem size reported by the superblock. Filesystem mismatches often occur after a change to the filesystem or partition size, if there is a filesystem misconfiguration, or if the storage disk is damaged. Inode exhaustion occurs when there are no available unique identifiers for a file even if there is still free disk space available. Each file created on a Linux partition is given an identifier called an inode. Filesystem corruption can occur when data is incorrectly read to or written from a storage device. Low IOPS (Input/Output Operations per Second) is a measurement that indicates that a storage device is performing slowly."
+                                        },
+                                        {
+                                            "id":  "e1-q64",
+                                            "question":  "Susan, the COO at Dion Training, needs to securely send a message to Jason over the internet using a PKI-based system. Which of the following key types does she need to use to encrypt the message so that only Jason can decrypt the message?",
+                                            "options":  [
+                                                            "Jason\u0027s public key",
+                                                            "Jason\u0027s private key",
+                                                            "Susan\u0027s private key",
+                                                            "Susan\u0027s public key"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "Susan should use Jason\u0027s public key to encrypt the message. Since PKI relies on a public/private key pair for encryption and decryption, if the message is encrypted with the receiver\u0027s public key, only their public key can decrypt the message. Therefore, if Susan uses Jason\u0027s public key to encrypt the message, only Jason\u0027s private key can be used to decrypt the message. Susan cannot use Jason\u0027s private key to encrypt the message since only Jason has access to the private key and anyone with Jason\u0027s public key could decrypt a message encrypted with Jason\u0027s public key. If the message was encrypted with Susan\u0027s private key, anyone with Susan\u0027s public key could decrypt the message (not just Jason). If Susan encrypted the message using her private key, anyone could decrypt the message using her public key (not just Jason)."
+                                        },
+                                        {
+                                            "id":  "e1-q65",
+                                            "question":  "Which of the following special device files is a writable location used as a destination to discard specified data?",
+                                            "options":  [
+                                                            "/tmp",
+                                                            "/dev/urandom",
+                                                            "/dev/zero",
+                                                            "/dev/null"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The /dev/null special file is a writeable location that is used as a target for generated data that should be discarded. This data is often error messages that are redirected to /dev/null by using the 2\u003e redirector. The /dev/zero file is a way of filling storage capacity with a series of zeroes. For example, using the dd command, a sysadmin can create a file of a specified size as part of testing. The /dev/urandom file can create is a source of random characters for tasks such as creating completely randomized passwords. The /tmp folder stores temporary files that are susceptible to loss if the Linux system is shutdown abruptly."
+                                        },
+                                        {
+                                            "id":  "e1-q66",
+                                            "question":  "Which of the following commands is used to stop a service?",
+                                            "options":  [
+                                                            "systemctl restart",
+                                                            "systemctl start",
+                                                            "systemctl stop",
+                                                            "systemctl enable"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The systemctl stop command is used to stop a service or daemon, but it is not persistent and the service will restart once the system reboots. The systemctl start command activates a service immediately. The systemctl enable command allows a service to be started up during the next system boot. The systemctl restart command restarts the service or daemon."
+                                        },
+                                        {
+                                            "id":  "e1-q67",
+                                            "question":  "Anthony, a system administrator at Dion Training, wants to select an orchestration tool that uses agents and relies on the Ruby programming language. Which of the following orchestration tools would meet these requirements?",
+                                            "options":  [
+                                                            "Kickstart",
+                                                            "Chef",
+                                                            "Ansible",
+                                                            "SaltStack"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "Chef is an orchestration tool that utilizes agents and the Ruby programming language. SaltStack is an orchestration tool that utilizes both agent and agentless options and supports the use of Python and YAML. Ansible is an orchestration tool that is commonly used for Red Hat Enterprise Linux deployments, is agentless, and relies on the Python programming language. While Puppet uses a Ruby-based domain-specific language (DSL) and supports Ruby for custom modules, it is not the primary language for writing configurations, and Puppet’s focus is on its own DSL."
+                                        },
+                                        {
+                                            "id":  "e1-q68",
+                                            "question":  "Nia is using an AI-assisted tool to generate a shell script for log rotation. What should she do first before deploying this output to production?",
+                                            "options":  [
+                                                            "Manually review and test the script to verify its accuracy and safety",
+                                                            "Submit the script through an online AI model for security testing",
+                                                            "Copy and paste the script into all production systems to ensure uniformity",
+                                                            "Deploy the code immediately if it looks functional and monitor for issues"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "Reviewing AI-generated code is a best practice to verify its correctness, safety, and alignment with organizational needs. Blindly deploying unverified AI output could introduce security vulnerabilities or misconfigurations. Even if the AI “seems” right, validation is crucial. Submitting the script to another AI model doesn’t guarantee a valid or safe result."
+                                        },
+                                        {
+                                            "id":  "e1-q69",
+                                            "question":  "Ivor, a system administrator at Dion Training, wants to mirror an online repository to a local storage location on a Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "repolist",
+                                                            "createrepo",
+                                                            "makecache",
+                                                            "reposync"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The reposync utility is used to mirror an online repository to a local storage location. This allows other clients on the network to install packages from the local repository instead of the online repository. The repolist command is used to display all of the available repositories. The makecache command is used to locally cache information about the available repositories. The createrepo command is used to create a specified location and update an XML file that will be used to reference the repository\u0027s location."
+                                        },
+                                        {
+                                            "id":  "e1-q70",
+                                            "question":  "Which of the following boot loaders is installed by default in CentOS and most modern Linux distributions?",
+                                            "options":  [
+                                                            "LILO",
+                                                            "BootX",
+                                                            "GRUB2",
+                                                            "WBM"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The Grand Unified Bootloader version 2 (GRUB2) is the default boot loader in most modern Linux distributions, including CentOS. A bootloader is the first software program that runs when a computer starts. It is responsible for loading and transferring control to the operating system kernel. The Linux Loader (LILO) is an older boot loader that was commonly used with Linux systems during the 1990s and early 2000s. The development and support for LILO were officially terminated in 2015. BootX is a software-based bootloader designed and developed by Apple for use on the company\u0027s Macintosh computer systems and the macOS operating system. The Windows Boot Manager (WBM) is the boot loader used by Microsoft\u0027s Windows operating system."
+                                        },
+                                        {
+                                            "id":  "e1-q71",
+                                            "question":  "Mitchell, a system administrator at Dion Training, wants to reset the contexts throughout the filesystem on a Linux server. Which of the following SELinux features could be used to accomplish this?",
+                                            "options":  [
+                                                            "strict policy",
+                                                            "autorelabel",
+                                                            "targeted policy",
+                                                            "system booleans"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The autorelabel feature of SELinux allows sysadmins to cause contexts to be reset throughout the filesystem. System Boolean values enable you to change policy configurations at runtime without actually writing the policy directly. A strict policy is a policy where every subject and object of the system is enforced to operate on the Mandatory Access Control (MAC) method. Targeted policy subjects and objects run in an unconfined environment. When using a targeted policy, the untargeted subjects and objects will operate on the DAC method and the targeted daemons will operate on the MAC method. SELinux was created by National Security Agency to enforce mandatory access control (MAC) in Linux environments. SELinux provides additional file system and network security so that unauthorized processes cannot access or tamper with data, bypass security mechanisms, violate security policies, or execute untrustworthy programs."
+                                        },
+                                        {
+                                            "id":  "e1-q72",
+                                            "question":  "Phillip, a system administrator at Dion Training, wants to start up a docker container. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "docker start",
+                                                            "docker logs",
+                                                            "docker restart",
+                                                            "docker stop"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The docker start command is used to start a stopped container. The docker stop command is used to stop a running container. The docker restart command is used to restart a stopped container. The docker logs command is used to display the log files for the specific container image specified when invoking the command."
+                                        },
+                                        {
+                                            "id":  "e1-q73",
+                                            "question":  "What is the home directory of the root user?",
+                                            "options":  [
+                                                            "/",
+                                                            "/tmp",
+                                                            "/boot",
+                                                            "/root"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The /root directory is the home directory of the root user. The /boot directory contains files related to the Linux boot-up process. The / directory is the top-level directory of the Linux file system hierarchy. The /tmp folder stores temporary files that are susceptible to loss if the Linux system is shutdown abruptly."
+                                        },
+                                        {
+                                            "id":  "e1-q74",
+                                            "question":  "Which of the following controls service-to-service interactions in a containerized environment?",
+                                            "options":  [
+                                                            "Container image",
+                                                            "Container registry",
+                                                            "Service mesh",
+                                                            "Virtual machine"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "Service mesh is a dedicated infrastructure layer managed by code that provides service-to-service interaction in a container environment. A container image is a static file with executable code that can create a container on a computer system. Since a container image is a static file, it cannot be changed and is therefore able to be deployed consistently in any environment. A container registry is a collection of repositories used to store and access container images. Virtual machines (VMs) allow for the virtualization of a physical computer so that each virtual machine can run its own copy of an operating system."
+                                        },
+                                        {
+                                            "id":  "e1-q75",
+                                            "question":  "Max, a system administrator at Dion Training, runs the top command on a Linux server and sees a high value for the %s metric. Which of the following BEST describes what this metric is used for?",
+                                            "options":  [
+                                                            "This metric represents the amount of time the CPU is waiting for I/O access",
+                                                            "This metric represents the amount of time the CPU spent running the Linux kernel",
+                                                            "This metric represents the amount of time the CPU is idle",
+                                                            "This metric represents the amount of time the CPU spent running user processes"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The top command dynamically displays the processes consuming the most system resources. The %s metric displays the CPU time spent running the Linux kernel. The %wa metric displays the I/O wait time. If the %wa is high, this indicates that the run queue is too high. The %id displays CPU idle time and if this is too high then this indicates that the CPU is working too hard. The %us displays CPU time spent running user processes. The %st displays steal which indicates how often a virtual CPU is waiting for access to the physical CPU."
+                                        },
+                                        {
+                                            "id":  "e1-q76",
+                                            "question":  "Diane, a system administrator at Dion Training, needs to add some user accounts to a Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "useradd",
+                                                            "usermod",
+                                                            "userdel",
+                                                            "groupadd"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The useradd command is used to create user accounts and configure the default settings for a new user. The usermod command is used to modify the system account files to reflect changes for a given user account. The userdel command is used to delete or remove an existing user account on a system. The groupadd command is used to create a new group."
+                                        },
+                                        {
+                                            "id":  "e1-q77",
+                                            "question":  "What best describes a cipher negotiation issue in a Linux system?",
+                                            "options":  [
+                                                            "A process repeatedly uses memory without releasing it, leading to high RAM use",
+                                                            "The filesystem becomes full with old log files and stops accepting new writes",
+                                                            "The system fails to load because the kernel image is missing at boot",
+                                                            "The client and server fail to agree on secure encryption methods during connection setup"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "OBJ 5.4 - A cipher negotiation issue happens when a client and server attempt to establish a secure connection but cannot agree on which encryption methods to use during the initial handshake. This prevents the connection from being established entirely. This is a common problem in protocols like SSH or HTTPS when supported ciphers differ between systems. A filesystem filling up with old log files would result in write failures, but has nothing to do with encryption or network security. A process that consumes memory without releasing it describes a memory leak, which impacts system performance but not encryption negotiation. Failing to load the system due to a missing kernel image is a boot error, unrelated to secure communication or encryption protocols."
+                                        },
+                                        {
+                                            "id":  "e1-q78",
+                                            "question":  "Sandra, a software developer at Dion Training, wants to maintain version control while developing the code base for a new learning management system with her development team. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "rpm",
+                                                            "yum",
+                                                            "git",
+                                                            "dpkg"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "Git is a distributed version control system primarily used by developers while collaborating on a project. Git allows multiple developers to work together using non-linear development by tracking the changes they make to files and allowing those changes to be merged into a single and consolidated code base. The yum (Yellowdog Updater) command is used to install, build, remove, and manage Red Hat (.rpm) packages on a Linux system. The rpm (Red Hat Package Manager) command is used to install, build, remove, and manage Red Hat (.rpm) packages on a Linux system. The dpkg command is used to install, build, remove, and manage Debian (.deb) packages on a Linux system."
+                                        },
+                                        {
+                                            "id":  "e1-q79",
+                                            "question":  "Which firmware is considered the legacy standard that runs when the computer powers on and enables the initial testing of various hardware components?",
+                                            "options":  [
+                                                            "UEFI",
+                                                            "BIOS",
+                                                            "initrd.img",
+                                                            "GRUB2"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The Basic Input/Output System (BIOS) is a standard for firmware interfaces stored on a motherboard\u0027s ROM chip. The BIOS firmware is run when the computer powers on, enables it to test the various hardware components in the computer, and runs the boot loader to start up the operating system. The Unified Extensible Firmware Interface (UEFI) is newer firmware technology that has replaced the BIOS in most modern computers. UEFI runs faster than BIOS, can operate within a greater amount of memory, access larger storage drives, access more hardware types, and improves the security of the computer. The Linux initrd image is an archive file containing all the essential files required for booting the operating system. GRUB2 is a popular Linux bootloader."
+                                        },
+                                        {
+                                            "id":  "e1-q80",
+                                            "question":  "Maxine, a system administrator at Dion Training, needs to modify the password expiration for user accounts on a Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "chage",
+                                                            "chmod",
+                                                            "chgrp",
+                                                            "chown"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The chage (change age) command is used to control password expiration, expiration warnings, inactive days, and other information for existing user accounts. The chmod (change modification) command is used to modify the permissions of a file or directory, but only the file or directory\u0027s owner or a system administrator can change the permissions for an object. The chown (change ownership) command is used to change the owner, the group, or both the owner and the group for a given file or directory. The chown command allows permissions to be set so that someone else can manage an object\u0027s permissions other than the user who created that object. The chgrp (change group) command is used to change the group ownership of a given file or directory."
+                                        },
+                                        {
+                                            "id":  "e1-q81",
+                                            "question":  "David, the CTO at Dion Training, wants to improve his productivity by scheduling tasks to automatically be performed at certain times of the day. Which of the following is the primary task scheduler used on a Linux system?",
+                                            "options":  [
+                                                            "SMB",
+                                                            "GRUB2",
+                                                            "LUKS",
+                                                            "CRON"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The cron command is the primary task scheduler in Linux. The SMB (Server Message Block) protocol provides users with shared access to files and other resources across a local area network (LAN). Linux Unified Key Setup (LUKS) is a platform-independent full-drive encryption solution that is commonly used to encrypt storage devices in Linux environments. GRUB2 is a popular Linux bootloader."
+                                        },
+                                        {
+                                            "id":  "e1-q82",
+                                            "question":  "Julie, a system administrator at Dion Training, wants to rename a group called PreviousStudents from the company\u0027s Linux server to Graduates. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "groupdel",
+                                                            "useradd",
+                                                            "groupmod",
+                                                            "groupadd"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The groupmod command is used to modify the group on a system. The groupadd command is used to create a new group. The groupdel command is used to delete or remove a group on a system. The useradd command is used to create user accounts and configure the default settings for a new user."
+                                        },
+                                        {
+                                            "id":  "e1-q83",
+                                            "question":  "Hilary, a network administrator at Dion Training, is troubleshooting an issue where two network devices are transmitting on the same network segment at the same time. This is causing issues on the network, the data needs to be retransmitted, and higher latency rates are being experienced by the users. Which of the following terms best describes this issue?",
+                                            "options":  [
+                                                            "High IOPS",
+                                                            "Network collisions",
+                                                            "Low IOPS",
+                                                            "Dropped packets"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "A network collision occurs when two devices attempt to transmit data simultaneously on the same circuit or network segment. This leads to the message being corrupted and the data will need to be resent. Dropped packets usually occur when a routing device does not know which route to use when sending a packet. Low and high IOPS (Input/Output Operations per Second) are measurements used to indicate how well a storage device is performing."
+                                        },
+                                        {
+                                            "id":  "e1-q84",
+                                            "question":  "Bertha, a system administrator at Dion Training, wants to display the default target on a Linux workstation to determine if users have access to the GUI. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "systemctl get-default",
+                                                            "systemctl status",
+                                                            "systemctl isolate",
+                                                            "systemctl set-default"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The systemctl command is used to control the systemd init daemon. The systemctl command is used to view running services, manage (enable/disable) services to run during boot or within the current session, determine the status of these services, and manage the system target. The systemctl get-default command displays the default target. The systemctl isolate command starts the specified unit environment. The systemctl set-default command changes the default target. The systemctl status command displays the status of the specified service."
+                                        },
+                                        {
+                                            "id":  "e1-q85",
+                                            "question":  "Which of the following protocols is used to automatically configure a network client with a leased IP address, subnet mask, and gateway?",
+                                            "options":  [
+                                                            "SSH",
+                                                            "NTP",
+                                                            "DNS",
+                                                            "DHCP"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "Dynamic Host Configuration Protocol (DHCP) is a network protocol that is used to configure network devices to communicate on an IP network. A DHCP client uses the DHCP protocol to acquire configuration information, such as an IP address, a default route, and one or more DNS server addresses from a DHCP server. The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers reachable through the Internet or other Internet Protocol networks. The Network Time Protocol (NTP) service enables the synchronization of a host\u0027s time with a definitive time source over the network. The Secure Shell (ssh) protocol provides a secure encrypted connection between two hosts over an insecure network."
+                                        },
+                                        {
+                                            "id":  "e1-q86",
+                                            "question":  "Christopher, a network administrator at Dion Training, wants to deny the use of FTP services by blocking it in the firewall on a Linux server. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "firewall-cmd --zone=dmz --list-all",
+                                                            "firewall-cmd --get-zones",
+                                                            "firewall-cmd --zone=dmz --remove-port=21/tcp",
+                                                            "firewall-cmd --zone=dmz --add-port=21/tcp"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "OBJ 2.3 - The firewall-cmd --zone=dmz --remove-port=21/tcp is used to block FTP communications through the firewall. The firewall-cmd --zone=dmz --add-port=21/tcp would allow FTP communications to occur through the firewall using port 21. The firewall-cmd --get-zones is used to list all zones in the firewall. The firewall-cmd --zone=dmz --list-all would list all rules in the dmz zone."
+                                        },
+                                        {
+                                            "id":  "e1-q87",
+                                            "question":  "Josephine, a system administrator at Dion Training, wants to automate the integration and testing phase of the software development lifecycle. Which of the following should be used to accomplish this?",
+                                            "options":  [
+                                                            "Orchestration",
+                                                            "Continuous Integration/Continuous Deployment (CI/CD)",
+                                                            "Infrastructure as Code (IaC)",
+                                                            "DevOps"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "Continuous Integration/Continuous Deployment (CI/CD) is a process for managing the software-development life cycle that automates feature integration and testing. DevOps is an amalgamation of software development and systems operations characterized by a shorter development life cycle, a reduction in the time between product changes, and the integration of those changes in the production environment. Infrastructure as Code (IaC) refers to the idea of centrally managing configuration files with strict version control to automate the deployment of configuration file changes. Orchestration refers to a series of automated tasks that, when combined, result in a complete solution."
+                                        },
+                                        {
+                                            "id":  "e1-q88",
+                                            "question":  "Jacqueline, a system administrator at Dion Training, wants to allow users to change the on and off status for the SELinux boolean values. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "setsebool",
+                                                            "semanage",
+                                                            "sestatus",
+                                                            "getsebool"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The setsebool command changes the on/off status of an SELinux boolean value. These boolean values enable a user to change policy configurations at runtime without writing the policy directly. The getsebool command displays the on/off status of SELinux boolean values. The semanage command configures SELinux policies. The sestatus command gets the status of SELinux, including its current mode, policy type, and mount point."
+                                        },
+                                        {
+                                            "id":  "e1-q89",
+                                            "question":  "Brandon, a system administrator at Dion Training, wants to disable the smtpd service using the SysVinit init method. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "chkconfig {service} on",
+                                                            "chkconfig {service} reset",
+                                                            "chkconfig {service} restart",
+                                                            "chkconfig {service} off"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The chkconfig command is used to control services in each runlevel, start services, and stop services. The chkconfig {service} off command disables a service so that it is no longer started on boot. The chkconfig {service} restart command resets the status of a service. The chkconfig {service} reset command stops a service immediately. The chkconfig {service} on command enables a service to be started on boot."
+                                        },
+                                        {
+                                            "id":  "e1-q90",
+                                            "question":  "Mazen, a system administrator at Dion Training, wants to create a new volume group. Which of the following commands should he use to perform this function?",
+                                            "options":  [
+                                                            "lvresize",
+                                                            "pvcreate",
+                                                            "vgcreate",
+                                                            "lvscan"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "The vgcreate command creates volume groups on a Linux server. The lvscan command scans all physical devices for logical volumes on a Linux server. The lvresize command resizes logical volumes on a Linux server. The pvcreate command initializes a drive or partition to use as a physical volume on a Linux server."
+                                        },
+                                        {
+                                            "id":  "e2-q1",
+                                            "question":  "Elizabeth, an analyst at Dion Training, is trying to open a file containing practice exam questions for the CompTIA Data+ certification. When she tries to open the file, though, an error appears that states the file is already opened and that she cannot access its contents. Which command should Elizabeth use to identify which files are currently open on the system and which processes opened those files?",
+                                            "options":  [
+                                                            "fcstat",
+                                                            "htop",
+                                                            "blkid",
+                                                            "lsof"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The lsof command displays a list of the open files and the processes that opened them. The htop command is a user-friendly color-coded display that shows CPU and memory utilization. The blkid command displays known information about the partitions on a specified device. The fcstat command displays information about existing Fibre Channel adapters."
+                                        },
+                                        {
+                                            "id":  "e2-q2",
+                                            "question":  "Owen, a Linux administrator, is setting up a new password policy that complies with security guidelines. Which of the following settings would most effectively prevent users from immediately reusing their last few passwords?",
+                                            "options":  [
+                                                            "Use chage to set an account expiration date",
+                                                            "Set the shell to /bin/rbash",
+                                                            "Enable password history through PAM",
+                                                            "Configure /etc/login.defs to increase the minimum password length"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "Enabling password history through PAM (Pluggable Authentication Modules) restricts users from reusing previous passwords, a best practice in account hardening. Increasing minimum length improves strength but doesn’t stop reuse. chage sets aging and expiry, not history enforcement. Restricted shells like /bin/rbash limit command execution but aren’t relevant to password reuse."
+                                        },
+                                        {
+                                            "id":  "e2-q3",
+                                            "question":  "Which of the following is NOT a security context within SELinux?",
+                                            "options":  [
+                                                            "role",
+                                                            "label",
+                                                            "user",
+                                                            "type"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "Label is not a context within SELinux. SELinux defines three security contexts: user, role and type. SELinux was created by National Security Agency to enforce mandatory access control (MAC) in Linux environments and is the default context-based permissions scheme provided with CentOS and Red Hat Enterprise Linux. SELinux provides additional file system and network security so that unauthorized processes cannot access or tamper with data, bypass security mechanisms, violate security policies, or execute untrustworthy programs."
+                                        },
+                                        {
+                                            "id":  "e2-q4",
+                                            "question":  "Sheila, a system administrator at Dion Training, wants to customize a Linux server to listen for incoming SSH connections over port 2222. Which of the following files should be modified to accomplish this?",
+                                            "options":  [
+                                                            "/etc/ssh/sshd_config",
+                                                            "~/.ssh/config",
+                                                            "~/.ssh/known_hosts",
+                                                            "/root"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The /etc/ssh/sshd_config file is the primary configuration file for the SSH daemon on Linux systems. By editing this file, Sheila can change the default port on which the SSH server listens for incoming connections. To listen on port 2222, she would need to locate the line that specifies Port 22 and change it to Port 2222, then restart the SSH service for the changes to take effect. The ~/.ssh/config file is used to create user-specific configurations for SSH clients. This includes shortcuts for hostnames, specifying different SSH keys for different servers, and other client-side options. Changing this file would not change the server settings or the port on which the SSH server listens for incoming connections. The ~/.ssh/known_hosts file contains a list of the SSH hosts that a user has connected to previously. It stores the SSH fingerprints of the servers to help with the verification of the server\u0027s identity in future connections. Modifying this file would not affect the listening port of the SSH server on the system. The /root directory is the home directory for the root user on a Linux system. It does not contain any SSH server configuration files by default. Modifying or adding files in this directory would not change the SSH server\u0027s behavior or its listening port."
+                                        },
+                                        {
+                                            "id":  "e2-q5",
+                                            "question":  "Caroline, a system administrator at Dion Training, created a new container image and wants to add it to Dion Training\u0027s repository. Which of the following commands should be used to accomplish this?",
+                                            "options":  [
+                                                            "docker ps",
+                                                            "docker info",
+                                                            "docker pull",
+                                                            "docker push"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "The docker command is used as the primary command to interact with docker containers on a Linux system. The docker push command is used to upload a container image to a registry. The docker ps command is used to list the containers on a system, as well as information like their creation date, uptime, and the ports in use by those containers. The docker info is used to display system-wide information, including the number of running, paused, and stopped containers. The docker pull command is used to pull a container image from a registry."
+                                        },
+                                        {
+                                            "id":  "e2-q6",
+                                            "question":  "A user reports they can’t SSH into a server. The administrator runs: and sees: What is the best next step?",
+                                            "options":  [
+                                                            "Rebuild the initramfs to load required drivers for SSH",
+                                                            "Extend the server’s partition to provide more space for SSH logs",
+                                                            "Start the SSH service so it begins accepting connections",
+                                                            "Add the SSH binary directory to the system’s PATH variable"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "OBJ 5.4 - Starting the SSH service will restore connectivity because the output shows the service is inactive. Rebuilding the initramfs addresses driver-related issues, not a stopped SSH service. Extending the server’s partition increases storage capacity but does not affect whether SSH is running. Adding the SSH binary directory to the PATH variable helps locate the executable, but does not start the service."
+                                        },
+                                        {
+                                            "id":  "e2-q7",
+                                            "question":  "Noah is teaching a new Linux administrator some basic commands. Which of the following functions does the cat command perform?",
+                                            "options":  [
+                                                            "Delete the contents of the specified file",
+                                                            "Display the contents of a text file on the screen",
+                                                            "Display the contents of a file that would not normally fit on one screen",
+                                                            "Move the contents of the specified file"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The cat command displays the contents of a text file on the screen. If the content of the file is larger than the screen, the contents will scroll off the top of the screen. To fit one screen of text at a time to the screen, the administrator should use the more or less commands. The rm (remove) command is used to delete the contents of the specified file. The mv (move) command is used to move the contents of the specified file."
+                                        },
+                                        {
+                                            "id":  "e2-q8",
+                                            "question":  "Harold, a system administrator at Dion Training, needs to select a package manager for an Ubuntu server he just installed. Which of the following package managers would be compatible for use with this Ubuntu server?",
+                                            "options":  [
+                                                            "apt",
+                                                            "zypp",
+                                                            "rpm",
+                                                            "yum"
+                                                        ],
+                                            "correctIndex":  0,
+                                            "explanation":  "The apt (Advanced Package Tool) command is used to install, update, remove, and manage.deb packages on Ubuntu, Debian, and other Debian-based distributions. The RPM package manager is an open package system that is designed to run on Red Hat Enterprise Linux and CentOS. The yum (Yellowdog Updater) is a modern and more advanced manager used by Red Hat-based distributions. The ZYpp package manager is a modern package manager used by SUSE-based distributions. Since Ubuntu is a Debian-based Linux distribution, it must use a package manager that supports the.deb package format."
+                                        },
+                                        {
+                                            "id":  "e2-q9",
+                                            "question":  "Gavin, a system administrator at Dion Training, is currently working in his home directory. He enters \u0027cd /var/log/\u0027 in the shell to move into the log directory. Which of the following types of path traversals was just performed?",
+                                            "options":  [
+                                                            "Parent",
+                                                            "Same",
+                                                            "Relative",
+                                                            "Absolute"
+                                                        ],
+                                            "correctIndex":  3,
+                                            "explanation":  "An absolute path defines the directories to traverse by starting from the root of the filesystem. A relative path defines the directories to traverse based on the user\u0027s current location in the filesystem. A traversal to a parent directory occurs when the user enters the \u0027cd..\u0027 command. A traversal to the same directory occurs when the user enters the \u0027cd.\u0027 command."
+                                        },
+                                        {
+                                            "id":  "e2-q10",
+                                            "question":  "During a security audit, Malik is asked to verify the integrity of system binaries and detect unauthorized modifications. Which of the following tools is best suited for this purpose",
+                                            "options":  [
+                                                            "openssl",
+                                                            "fail2ban",
+                                                            "aide",
+                                                            "audit2allow"
+                                                        ],
+                                            "correctIndex":  2,
+                                            "explanation":  "AIDE (Advanced Intrusion Detection Environment) is designed to detect file changes and validate integrity by comparing current file states against a known baseline. This is ideal for checking if binaries have been altered. fail2ban is used to block IPs with repeated login failures, not file integrity. audit2allow helps manage SELinux policies, not detect changes. OpenSSL is a cryptographic toolkit mainly used for secure communication and certificate operations, not file integrity checks."
+                                        },
+                                        {
+                                            "id":  "e2-q11",
+                                            "question":  "Asher, a system administrator at Dion Training, wants to copy files from a backup file server to a production server over the company\u0027s internal network. Which of the following commands would create an encrypted tunnel between the client and the server to securely copy files over the network?",
+                                            "options":  [
+                                                            "netstat",
+                                                            "scp",
+                                                            "tcpdump",
+                                                            "resolvectl"
+                                                        ],
+                                            "correctIndex":  1,
+                                            "explanation":  "The scp (secure copy) command is used to copy data to/from a remote host using SSH. The netstat (network statistics) command gathers information about TCP connections to the system. Netstat can be used to display existing connections, listening ports on the server, and network adapter information. The resolvectl command allows an administrator to manually query the name resolution services to confirm that the names and IP addresses returned are accurate. The tcpdump command is used to conduct packet captures and analysis in Linux."
+                                        }
+                                    ]
+                  }
+              ]
+}
